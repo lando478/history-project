@@ -118,7 +118,7 @@ export function ChapterCards() {
     },
     {
       number: 2,
-      title: "Rise of Environemnt Activism and Regulation",
+      title: "Rise of Environemntal Activism and Regulation",
       description:
         "Rise of activism (Abalone Alliance), EPA creation, Nuclear Waste Policy Act (1982), repository sitings.",
       imageSrc: "/1979-June-Nuke-rally-610.jpg",

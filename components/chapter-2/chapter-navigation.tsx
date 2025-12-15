@@ -32,7 +32,6 @@ export function ChapterNavigation({
           <ArrowLeft className="w-5 h-5 transition-transform group-hover:-translate-x-1" />
           {prevLabel ?? "Back to Exhibit Overview"}
         </Button>
-
         {/* Next chapter button */}
         {nextChapter && (
           <Button

@@ -97,7 +97,7 @@ export function ExhibitSections() {
     {
       title: "Dumping Grounds of the Atomic Age",
       description:
-        "Barrels of radioactive waste rolled into the ocean, thousands and thousands of them, from California to the open Pacific. During the Manhattan project era, there were no safety standards, no long-term plans. At Oak Ridge, waste flows straight into the Clinch River. In New Mexico, the canyons near Los Alamos become dumping grounds. The government reassured the public that radioactive waste was being handled safely, but this was far from the truth.",
+        "Barrels of radioactive waste rolled into the ocean, thousands and thousands of them, from California to the open Pacific. During the Manhattan Project era, there were no safety standards, no long-term plans. At Oak Ridge, waste flows straight into the Clinch River. In New Mexico, the canyons near Los Alamos become dumping grounds. The government reassured the public that radioactive waste was being handled safely, but this was far from the truth.",
       imageSrc: "/manhattan-project-dumping.jpg",
       imageAlt: "Early nuclear waste dumping near production sites",
     },

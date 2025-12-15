@@ -233,7 +233,7 @@ export function DisplayModal({
         {/* Footer Actions */}
         <div className="sticky bottom-0 bg-card/95 backdrop-blur-sm border-t border-border p-6">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-            <div className="flex gap-2">
+            {/* <div className="flex gap-2">
               <Button
                 variant="outline"
                 disabled={displayNumber === 4}
@@ -250,7 +250,7 @@ export function DisplayModal({
                 Next
                 <ChevronRight className="w-4 h-4" />
               </Button>
-            </div>
+            </div> */}
 
             <Button
               onClick={onDownload}

@@ -25,7 +25,7 @@ export default function ConclusionPage() {
           variant="outline"
           className="text-lg px-8 bg-transparent"
         >
-          <a href="#chapters">Explore Chapters</a>
+          <a href="/#chapters">Explore Chapters</a>
         </Button>
       </div>
       {/* <VictoryTimeline /> */}

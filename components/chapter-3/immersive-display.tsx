@@ -1,5 +1,7 @@
 "use client";
 
+import type React from "react";
+
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -47,32 +49,38 @@ export function ImmersiveDisplay({ display, index }: ImmersiveDisplayProps) {
     return () => observer.disconnect();
   }, []);
 
-const handleDownload = () => {
-  const filename = display.downloadFilename;
+  const handleDownload = () => {
+    const filename = display.downloadFilename;
 
-  // ✅ External link → new tab
-  if (filename.startsWith("http")) {
-    window.open(filename, "_blank", "noopener,noreferrer");
-    return;
-  }
+    // ✅ External link → new tab
+    if (filename.startsWith("http")) {
+      window.open(filename, "_blank", "noopener,noreferrer");
+      return;
+    }
 
-  // ✅ PDF in /public → open normally (browser handles it)
-  if (filename.endsWith(".pdf")) {
-    window.open(filename, "_blank");
-    return;
-  }
+    // ✅ PDF in /public → open normally (browser handles it)
+    if (filename.endsWith(".pdf")) {
+      window.open(filename, "_blank");
+      return;
+    }
 
-  // ⬇️ ONLY fallback for text content
-  const element = document.createElement("a");
-  const file = new Blob([display.fullText], { type: "text/plain" });
-  element.href = URL.createObjectURL(file);
-  element.download = filename;
-  document.body.appendChild(element);
-  element.click();
-  document.body.removeChild(element);
-};
+    // ⬇️ ONLY fallback for text content
+    const element = document.createElement("a");
+    const file = new Blob([display.fullText], { type: "text/plain" });
+    element.href = URL.createObjectURL(file);
+    element.download = filename;
+    document.body.appendChild(element);
+    element.click();
+    document.body.removeChild(element);
+  };
 
   const allImages = [display.image, ...display.additionalImages];
+
+  const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (e.target === e.currentTarget) {
+      setIsExpanded(false);
+    }
+  };
 
   return (
     <>
@@ -203,14 +211,20 @@ const handleDownload = () => {
 
       {/* Expanded Modal */}
       {isExpanded && (
-        <div className="fixed inset-0 z-50 bg-background/95 backdrop-blur-md overflow-y-auto">
-          <div className="min-h-screen p-6 md:p-12">
+        <div
+          className="fixed inset-0 z-50 bg-background/95 backdrop-blur-md overflow-y-auto"
+          onClick={handleBackdropClick}
+        >
+          <div
+            className="min-h-screen p-6 md:p-12"
+            onClick={(e) => e.stopPropagation()}
+          >
             {/* Close Button */}
             <Button
               onClick={() => setIsExpanded(false)}
               variant="ghost"
               size="icon"
-              className="fixed top-6 right-6 z-50 bg-background/80 backdrop-blur-sm hover:bg-background"
+              className="sticky top-6 ml-auto float-right z-50 bg-background/80 backdrop-blur-sm hover:bg-background"
             >
               <X className="w-6 h-6" />
             </Button>

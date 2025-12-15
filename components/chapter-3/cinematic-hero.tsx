@@ -73,7 +73,7 @@ export function CinematicHero() {
           <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
             Today, the legacy of nuclear waste persists in communities across America.
             <br />
-            From resistance to revelation, the fight continues.
+            {/* From resistance to revelation, the fight continues. */}
           </p>
 
           <div className="pt-8">
