@@ -121,7 +121,7 @@ export function ExhibitSections() {
       imageAlt: "Environmental protest movement",
     },
 
-    // SECTION 6 — INDIGENOUS RESISTANCE
+    // SECTION 6 — INDIGENOUS RESISTANCE 
     {
       title: "A Future Written in Resistance",
       description:
