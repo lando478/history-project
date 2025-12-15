@@ -14,9 +14,7 @@ export function ChapterReflection() {
             From the Cold War&apos;s secret ocean dumps to modern advocacy groups fighting for their families, these
             buried truths reveal a pattern of neglect and inequality that persists into the present day.
           </p>
-          <p className="text-accent font-medium pt-4">
-            The waste remains. The resistance endures. The truth must be told.
-          </p>
+
         </div>
       </div>
     </section>

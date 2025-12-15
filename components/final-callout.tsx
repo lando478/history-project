@@ -51,15 +51,6 @@ export function FinalCallout() {
             <p className="text-xl text-muted-foreground mb-12 text-pretty">
               Follow the buried story—chapter by chapter.
             </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-4 bg-accent hover:bg-accent/90 text-accent-foreground rounded-lg font-medium transition-colors duration-300">
-                Start Exploring
-              </button>
-              <button className="px-8 py-4 border border-border hover:border-accent/50 rounded-lg font-medium transition-colors duration-300">
-                Learn More
-              </button>
-            </div>
           </div>
         </div>
       </div>

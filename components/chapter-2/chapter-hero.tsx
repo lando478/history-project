@@ -32,7 +32,7 @@ export function ChapterHero() {
       {/* Hero Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center space-y-8">
         <h1 className="font-serif text-5xl md:text-7xl font-bold text-foreground leading-tight text-balance animate-fade-in-up">
-          Chapter 2 — Public Awakening & Activism: From Rivers on Fire to Nuclear Resistance
+          Chapter 2 — Public Awakening & Activism
         </h1>
 
         <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed text-pretty max-w-4xl mx-auto animate-fade-in-up [animation-delay:200ms] opacity-0 [animation-fill-mode:forwards]">
@@ -41,10 +41,10 @@ export function ChapterHero() {
         </p>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-fade-in-up [animation-delay:400ms] opacity-0 [animation-fill-mode:forwards]">
+        {/* <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-fade-in-up [animation-delay:400ms] opacity-0 [animation-fill-mode:forwards]">
           <span className="text-sm text-muted-foreground tracking-wide">Scroll to Explore</span>
           <ChevronDown className="w-6 h-6 text-accent animate-bounce" />
-        </div>
+        </div> */}
       </div>
     </section>
   )

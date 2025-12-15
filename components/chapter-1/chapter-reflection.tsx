@@ -5,15 +5,18 @@ export function ChapterReflection() {
         <div className="bg-card border border-border rounded-lg p-12 space-y-6">
           <div className="w-16 h-1 bg-accent" />
 
-          <h2 className="font-serif text-3xl font-bold text-foreground">End-of-Chapter Reflection</h2>
+          <h2 className="font-serif text-3xl font-bold text-foreground">
+            End-of-Chapter Reflection
+          </h2>
 
           <p className="text-muted-foreground leading-relaxed text-lg text-pretty">
-            Early Cold War optimism masked a growing environmental catastrophe. What officials framed as engineering
-            challenges had profound human, ethical, and ecological consequences. Chapter 1 reveals how secrecy and
-            misplaced confidence shaped the foundations of the nuclear age.
+            Chapter 1 demonstrates that early nuclear governance framed waste as
+            an engineering problem, masking the ethical and environmental
+            stakes. It marks the beginning of a hidden crisis that would later
+            demand public reckoning.
           </p>
         </div>
       </div>
     </section>
-  )
+  );
 }

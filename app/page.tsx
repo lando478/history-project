@@ -9,9 +9,12 @@ export default function HomePage() {
     <main className="min-h-screen bg-background">
       <Navigation />
       <HeroSection />
+      <section id="chapter-1">{
       <ExhibitSections />
+        }</section>
+
       <ChapterCards />
       <FinalCallout />
     </main>
-  )
+  );
 }
